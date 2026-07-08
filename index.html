@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The Indian Policy Review</title>
+    <meta name="description" content="The Indian Policy Review is a student-led independent digital diplomacy platform & a think-tank that embodies a uniquely Indian perspective on International & National affairs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@600;700;800&family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Utility Bar -->
+    <div class="top-announcement-bar">
+        <span>THINK . INFORM . NAVIGATE.</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <span class="flag-stripe orange"></span>
+                    <span class="flag-stripe white"></span>
+                    <span class="flag-stripe green"></span>
+                </div>
+                <div class="logo-text-wrapper">
+                    <span class="logo-title">THE INDIAN POLICY REVIEW</span>
+                    <span class="logo-subtitle">INDEPENDENT YOUTH-LED THINK-TANK</span>
+                </div>
+            </div>
+
+            <nav class="nav-links-wrapper">
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span class="hamburger-bar"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#magazine">Magazine</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-trigger">More <span class="arrow-down">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#centres">Our Centres</a></li>
+                            <li><a href="#team">The Core Team</a></li>
+                            <li><a href="#advisors">Our Advisors</a></li>
+                        </ul>
+                    </li>
+                    <li class="search-trigger-li">
+                        <a href="#" id="searchToggleBtn" class="search-icon-btn" aria-label="Open search">🔍</a>
+                    </li>
+                    <li><a href="#join" class="btn-join-now">JOIN NOW!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Box Overlay -->
+    <div class="search-overlay-bar search-hidden" id="searchBarOverlay">
+        <div class="search-inner-wrapper">
+            <input type="text" id="articleSearch" placeholder="Search articles, reports, and authors...">
+            <span class="search-close" id="searchCloseBtn">✕</span>
+        </div>
+    </div>
+
+    <!-- Hero Image Section (Rashtrapati Bhavan) -->
+    <section class="hero-image-section">
+        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1600&q=80" alt="Rashtrapati Bhavan Dome New Delhi" class="hero-full-img">
+    </section>
+
+    <!-- Who We Are Section (Black Background Split) -->
+    <section class="who-we-are-section" id="about">
+        <div class="who-we-are-grid">
+            <div class="who-we-are-text">
+                <h2 class="section-main-heading">India’s Next-Gen Think Tank.</h2>
+                <h3 class="section-sub-heading">Driven by Vision. Powered by Youth.</h3>
+                
+                <h4 class="block-title">Who Are We?</h4>
+                <p class="block-description">
+                    We are a youth-led think tank focused on amplifying India's strategic voice in a multipolar world. We engage in research, public policy, digital diplomacy, and advocacy, empowering young minds through publications, webinars, and media initiatives. Our mission is to inform, inspire, and impact with a professional and proactive, India-first approach.
+                </p>
+                <a href="#about" class="btn-read-more">Read more &gt;</a>
+            </div>
+            
+            <div class="who-we-are-visual">
+                <img src="https://images.unsplash.com/photo-1562790351-d273a961e0e9?auto=format&fit=crop&w=1200&q=80" alt="Modern illuminated strategic facility at night" class="visual-img">
+                <div class="visual-text-overlay">
+                    <span class="script-text-1">It's time to make a</span>
+                    <span class="script-text-2">breakthrough</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section (Black Background, White Cards) -->
+    <section class="recent-posts-section" id="articles">
+        <div class="container-recent-posts">
+            <h2 class="recent-posts-title"><span class="title-red">Recent</span> <span class="title-white">Posts</span></h2>
+            
+            <div class="posts-feed" id="articlesGrid">
+                
+                <!-- Post Card 1 -->
+                <div class="post-row-card" data-category="diplomacy">
+                    <div class="post-card-image">
+                        <img src="https://images.unsplash.com/photo-1618042164219-62c820f10723?auto=format&fit=crop&w=800&q=80" alt="Climate diplomacy summit meeting">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <span class="meta-logo">IPR</span>
+                            <span class="meta-text">The Indian Policy Review • Jun 17 • 12 min read</span>
+                        </div>
+                        <h4 class="post-card-title">
+                            <a href="#post-1">THE CLIMATE GAMBIT: INDIA’S CLIMATE DIPLOMACY AND WITHDRAWAL FROM COP33</a>
+                        </h4>
+                        <p class="post-card-excerpt">
+                            The field of global climate diplomacy, formerly seen as a significant unified front against the shared existential peril, is now characterized by strategic recalibration and disintegration. The pressure is on developing countries to strike a balance between the prestige of global leadership and the harsh realities of infrastructural growth as the world keeps shifting the dynamics...
+                        </p>
+                        <div class="post-card-footer">
+                            <span class="views-count">102 views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 2 -->
+                <div class="post-row-card" data-category="security">
+                    <div class="post-card-image">
+                        <img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?auto=format&fit=crop&w=800&q=80" alt="Strategic chess game board">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <span class="meta-logo">IPR</span>
+                            <span class="meta-text">The Indian Policy Review • Jun 12 • 8 min read</span>
+                        </div>
+                        <h4 class="post-card-title">
+                            <a href="#post-2">THE US-IRAN WAR: HOW CHINA IS WINNING THE US-IRAN WAR WITHOUT FIRING A SHOT</a>
+                        </h4>
+                        <p class="post-card-excerpt">
+                            The smoke has cleared over the Persian Gulf and the fear of American missiles has become the soundtrack of 2026, but a curious silence prevails in Beijing. While the US finds itself entrenched in another high-stakes Middle Eastern conflict, the broader global landscape is shifting beneath its feet...
+                        </p>
+                        <div class="post-card-footer">
+                            <span class="views-count">78 views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 3 -->
+                <div class="post-row-card" data-category="general">
+                    <div class="post-card-image">
+                        <img src="https://images.unsplash.com/photo-1599740831144-469b820a4b92?auto=format&fit=crop&w=800&q=80" alt="Local citizens protesting for agricultural rights">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <span class="meta-logo">IPR</span>
+                            <span class="meta-text">The Indian Policy Review • Jun 9 • 6 min read</span>
+                        </div>
+                        <h4 class="post-card-title">
+                            <a href="#post-3">DEVELOPMENT VS DISPLACEMENT: THE STORY OF CHITA ANDOLAN</a>
+                        </h4>
+                        <p class="post-card-excerpt">
+                            While the rest of the world is dealing with petroleum prices and energy reserves, the Chhatarpur and Panna districts of Madhya Pradesh, India, are facing their own crisis. The tribal women villagers of the Chhatarpur region of Madhya Pradesh lay on funeral pyres to protest the Ken-Betwa Link Project in April 2026...
+                        </p>
+                        <div class="post-card-footer">
+                            <span class="views-count">92 views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Card 4 -->
+                <div class="post-row-card" data-category="legal">
+                    <div class="post-card-image">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80" alt="Urban planning maps architectural sketch">
+                    </div>
+                    <div class="post-card-content">
+                        <div class="post-card-meta">
+                            <span class="meta-logo">IPR</span>
+                            <span class="meta-text">The Indian Policy Review • Jun 5 • 5 min read</span>
+                        </div>
+                        <h4 class="post-card-title">
+                            <a href="#post-4">THE 15-MINUTE CITY SOUNDS PERFECT, THAT'S EXACTLY THE PROBLEM.</a>
+                        </h4>
+                        <p class="post-card-excerpt">
+                            The popular urban planning idea is spreading fast, but the gap between the vision and the reality reveals a deeper governance crisis. This study analyzes the infrastructure bottlenecks and demographic friction points in adapting European spatial concepts to highly dense South Asian metropolises...
+                        </p>
+                        <div class="post-card-footer">
+                            <span class="views-count">115 views</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="no-results hidden" id="noResults">No posts matched your search criteria.</div>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section class="reports-section-wrapper" id="reports">
+        <div class="reports-container">
+            <h2 class="section-title-white">Research & Reports</h2>
+            <div class="reports-grid">
+                <div class="report-box-card">
+                    <div class="report-box-tag">Special Report</div>
+                    <h4>Navigating the Malacca Dilemma: Maritime Logistics and India's Eastern Command</h4>
+                    <p>Evaluating commercial shipping lanes, Chinese maritime patrols, and strategic deep-water port proposals in the Andaman Sea.</p>
+                    <button class="btn-download" onclick="alert('Downloading Report No. 42 (PDF)...')">Download PDF</button>
+                </div>
+                <div class="report-box-card">
+                    <div class="report-box-tag">White Paper</div>
+                    <h4>The Digital Rupee in the Global South: Cross-Border CBDC Frameworks</h4>
+                    <p>A comparative study on clearance speed and transaction fees in UPI/CBDC integrations across Southeast Asian corridor trades.</p>
+                    <button class="btn-download" onclick="alert('Downloading Whitepaper (PDF)...')">Download PDF</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Roster Section -->
+    <section class="roster-section-wrapper" id="team">
+        <div class="roster-container">
+            <h2 class="section-title-white">The Core Team</h2>
+            <div class="roster-grid">
+                <div class="roster-card">
+                    <div class="roster-avatar">SM</div>
+                    <h5>Siddharth Mukharji</h5>
+                    <span class="roster-role">Founder & Editor-in-Chief</span>
+                    <span class="roster-school">Jawaharlal Nehru University (JNU)</span>
+                </div>
+                <div class="roster-card">
+                    <div class="roster-avatar">AS</div>
+                    <h5>Ananya Sharma</h5>
+                    <span class="roster-role">Managing Editor</span>
+                    <span class="roster-school">Delhi University</span>
+                </div>
+                <div class="roster-card">
+                    <div class="roster-avatar">PR</div>
+                    <h5>Pratyush Roy</h5>
+                    <span class="roster-role">Director, Security Studies</span>
+                    <span class="roster-school">O.P. Jindal Global University</span>
+                </div>
+                <div class="roster-card">
+                    <div class="roster-avatar">KG</div>
+                    <h5>Kavya Gokhale</h5>
+                    <span class="roster-role">Director, Legal Affairs</span>
+                    <span class="roster-school">National Law School (NLSIU)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join / Submission Form Portal -->
+    <section class="join-portal-section" id="join">
+        <div class="join-portal-grid">
+            <div class="join-portal-info">
+                <h2>Join Our Research Roster</h2>
+                <p>
+                    We welcome submissions from researchers, policy experts, academics, and youth leaders. If you have an original analysis or evidence-based commentary that aligns with our research centers, submit your abstract below.
+                </p>
+            </div>
+            <div class="join-portal-form">
+                <form id="submissionForm">
+                    <input type="text" id="formName" placeholder="Full Name" required>
+                    <input type="email" id="formEmail" placeholder="Email Address" required>
+                    <input type="text" id="formAffiliation" placeholder="Academic Affiliation" required>
+                    <textarea id="formPitch" rows="4" placeholder="Pitch Abstract (approx. 150 words)..." required></textarea>
+                    <button type="submit">Submit Abstract</button>
+                    <div id="formFeedback" class="form-feedback hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area (Dark Navy Blue background, Gold Headings) -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col-1">
+                <div class="logo-area">
+                    <div class="logo-icon">
+                        <span class="flag-stripe orange"></span>
+                        <span class="flag-stripe white"></span>
+                        <span class="flag-stripe green"></span>
+                    </div>
+                    <div class="logo-text-wrapper">
+                        <span class="logo-title white-text">THE INDIAN POLICY REVIEW</span>
+                        <span class="logo-subtitle white-text">INDEPENDENT YOUTH-LED THINK-TANK</span>
+                    </div>
+                </div>
+                
+                <div class="footer-socials-row">
+                    <a href="#" aria-label="Facebook">🌐</a>
+                    <a href="#" aria-label="Twitter">🌐</a>
+                    <a href="#" aria-label="Instagram">🌐</a>
+                    <a href="#" aria-label="LinkedIn">🌐</a>
+                    <a href="#" aria-label="YouTube">🌐</a>
+                </div>
+            </div>
+
+            <div class="footer-col-2" id="centres">
+                <h5 class="footer-gold-heading">OUR CENTRES</h5>
+                <ul class="footer-list">
+                    <li><a href="#" data-filter="legal">LEGAL AFFAIRS & STUDIES RESEARCH CENTRE</a></li>
+                    <li><a href="#" data-filter="security">SECURITY & DEFENCE STUDIES RESEARCH CENTRE</a></li>
+                    <li><a href="#" data-filter="diplomacy">GLOBAL AFFAIRS & DIPLOMACY RESEARCH CENTRE</a></li>
+                    <li><a href="#" data-filter="general">GOVERNANCE & PUBLIC POLICY RESEARCH CENTRE</a></li>
+                    <li><a href="#" data-filter="general">INTERNAL AFFAIRS & POLITICAL RESEARCH CENTRE</a></li>
+                    <li><a href="#" data-filter="economy">ECONOMIC & INFRA DEVELOPMENT RESEARCH CENTRE</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-3">
+                <h5 class="footer-gold-heading">OVERVIEW</h5>
+                <ul class="footer-list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#articles">ARTICLES</a></li>
+                    <li><a href="#reports">REPORT</a></li>
+                    <li><a href="#magazine">MAGAZINE</a></li>
+                    <li><a href="#team">CORE TEAM</a></li>
+                    <li><a href="#founder">MEET THE FOUNDER</a></li>
+                    <li><a href="#advisors">MEET OUR ADVISORS</a></li>
+                    <li><a href="#team">MEET OUR TEAM</a></li>
+                    <li><a href="mailto:contact@indianpolicyreview.org">CONTACT US</a></li>
+                    <li><a href="#join">JOIN OUR TEAM</a></li>
+                    <li><a href="https://www.india.gov.in/" target="_blank">GOVT OF INDIA</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Copyright Bar (Black Background) -->
+    <div class="bottom-copyright-bar">
+        <div class="bottom-copyright-inner">
+            <div class="bottom-legal-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+            </div>
+            <div class="bottom-copyright-text">
+                Made with ❤ by Team IPR | © 2026 The Indian Policy Review. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
