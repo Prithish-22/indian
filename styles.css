@@ -294,10 +294,29 @@ body {
     color: var(--color-black);
 }
 
-/* 4. Hero Image Section */
-.hero-image-section {
+/* 4. Hero Slider Section */
+.hero-carousel-section {
     width: 100%;
     overflow: hidden;
+    background-color: var(--color-black);
+    position: relative;
+}
+
+.carousel-container-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: 400%; /* 4 slides */
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.carousel-slide-item {
+    width: 25%;
+    flex-shrink: 0;
 }
 
 .hero-full-img {
@@ -307,6 +326,60 @@ body {
     object-fit: cover;
     display: block;
 }
+
+/* Slide arrows */
+.carousel-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: var(--color-white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.carousel-nav-btn:hover {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+}
+
+.prev-btn { left: 20px; }
+.next-btn { right: 20px; }
+
+/* Slide Indicators */
+.carousel-dots-container {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+.dot-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot-indicator.active {
+    background-color: var(--color-teal);
+    transform: scale(1.2);
+}
+
 
 /* 5. Who We Are Section (Solid Black split layout) */
 .who-we-are-section {

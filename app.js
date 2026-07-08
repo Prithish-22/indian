@@ -157,4 +157,73 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         });
     }
+
+    // 5. Hero Carousel Slider Logic
+    const carouselTrack = document.getElementById('carouselTrack');
+    const prevSlideBtn = document.getElementById('prevSlideBtn');
+    const nextSlideBtn = document.getElementById('nextSlideBtn');
+    const dots = document.querySelectorAll('.dot-indicator');
+    
+    let currentSlideIndex = 0;
+    const totalSlides = 4;
+    let autoplayInterval;
+
+    function updateCarousel() {
+        if (!carouselTrack) return;
+        carouselTrack.style.transform = `translateX(-${currentSlideIndex * 25}%)`;
+        
+        // Update dots active class
+        dots.forEach((dot, index) => {
+            if (index === currentSlideIndex) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    }
+
+    if (nextSlideBtn) {
+        nextSlideBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoplay();
+        });
+    }
+
+    if (prevSlideBtn) {
+        prevSlideBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoplay();
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlideIndex = index;
+            updateCarousel();
+            resetAutoplay();
+        });
+    });
+
+    function startAutoplay() {
+        autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        startAutoplay();
+    }
+
+    // Start autoplay initially
+    startAutoplay();
 });
+
